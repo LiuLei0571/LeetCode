@@ -2,8 +2,8 @@
 .gradle
 /local.properties
 /.idea/libraries
-/.idea/misc.xml
-/.idea/vcs.xml
+.idea/misc.xml
+/out
 .DS_Store
 /build
 /captures
