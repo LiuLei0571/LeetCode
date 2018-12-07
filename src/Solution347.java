@@ -27,14 +27,6 @@ public class Solution347 {
         }
     }
 
-//    private class FreqCompare implements Comparator<Freq> {
-//
-//
-//        @Override
-//        public int compare(Freq f1, Freq f2) {
-//            return f1.freq - f2.freq;
-//        }
-//    }
 
     public List<Integer> topKFrequent(int[] nums, int k) {
         List<Integer> mList = new ArrayList<>();
