@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//给定一个所有节点为非负值的二叉搜索树，求树中任意两节点的差的绝对值的最小值。
+//根据二叉搜索树中序遍历是递增的规则
 public class Solution530 {
     public static void main(String[] args) {
         int[] a={100,76,35,86,97,11,90};
