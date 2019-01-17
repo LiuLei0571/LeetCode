@@ -1,7 +1,6 @@
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 public class Solution102 {
     public static void main(String[] args) {
@@ -22,6 +21,7 @@ public class Solution102 {
             int size = queue.size();
             List<Integer> mList = new ArrayList<>();
             for (int i = 0; i < size; i++) {
+
                 if (queue.peek().left != null) {
                     queue.add(queue.peek().left);
                 }
