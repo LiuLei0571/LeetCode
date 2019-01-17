@@ -19,8 +19,8 @@ public class Solution257 {
             return null;
         }
         s = s + root.val;
-        if (root.right == null&& root.left==null) {
-            arrayList.add( s);
+        if (root.right == null && root.left == null) {
+            arrayList.add(s);
 
         }
         binaryTreePath(root.left, arrayList, s);
