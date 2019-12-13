@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by liulei on 2018/12/8.
  */
@@ -21,8 +24,25 @@
 //        请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
 public class Solution3 {
 
-    public int lengthOfLongestSubstring(String s) {
+    public static void main(String[] args) {
+        System.out.println( new Solution3().lengthOfLongestSubstring("abcbdw"));
 
-        return 1;
+    }
+    // 定义两个指针，start和end，代表当前窗口的开始和结束位置，
+    // 使用hashset,当窗口中出现重复的字符时，start++;没有重复时，end++,每次更新长度的最大值
+    public int lengthOfLongestSubstring(String s) {
+        int n=s.length();
+        int res=0;
+        int end=0,start=0;
+        Set<Character> set=new HashSet<>();
+        while (start<n&&end<n){
+            if (set.contains(s.charAt(end))){
+                set.remove(s.charAt(start++));
+            }else {
+                set.add(s.charAt(end++));
+                res=Math.max(res,end-start);
+            }
+        }
+        return res;
     }
 }

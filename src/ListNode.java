@@ -26,29 +26,36 @@ public class ListNode {
         }
         return listNode;
     }
+    //头插法
+    public ListNode listNode2(int[] arr) {
+        ListNode listNode = this;
+        for (int i = 0; i < arr.length; i++) {
+            ListNode node=new ListNode(arr[i]);
+            node.next=listNode.next;
+            listNode.next=node;
+        }
+        return listNode;
+    }
 
 //    //快慢指针来处理，如果有环，快指针总有一天会和慢指针重复的
-//    public boolean hasCycle() {
-//        if (next == null || next.next == null) {
-//            return false;
-//        }
-//        ListNode head = next;
-//        ListNode tail = next;
-//        while (tail != null && tail.next != null) {
-//
-//            head = head.next;
-//            tail = tail.next.next;
-//            if (head == tail) {
-//                return true;
-//            }
-//        }
-//
-//        return false;
-//    }
+    public boolean hasCycle() {
+        if (next == null || next.next == null) {
+            return false;
+        }
+        ListNode head = next;
+        ListNode tail = next;
+        while (tail != null && tail.next != null) {
 
+            head = head.next;
+            tail = tail.next.next;
+            if (head == tail) {
+                return true;
+            }
+        }
 
+        return false;
+    }
 
-    //
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

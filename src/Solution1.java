@@ -2,9 +2,12 @@ import java.util.HashMap;
 
 public class Solution1 {
     public static void main(String[] args) {
-        int[] a = {3, 3};
-        System.out.println(new Solution1().twoSum(a, 6));
-    }
+        int[] a = {5,7,8,2,4};
+        int[] b=new Solution1().twoSum(a, 6);
+        for (int i = 0; i < b.length; i++) {
+            System.out.println(b[i]);
+        }
+     }
 
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> hashSet = new HashMap<>();
