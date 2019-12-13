@@ -11,11 +11,11 @@ public class Solution7 {
     public int reverse(int x) {
 
 
-        long temp=0;
-        while (x!=0){
-            temp=temp*10+x%10;
-            x=x/10;
+        long temp = 0;
+        while (x != 0) {
+            temp = temp * 10 + x % 10;
+            x = x / 10;
         }
-       return temp>Integer.MAX_VALUE||temp<Integer.MIN_VALUE?0: (int) temp;
+        return temp > Integer.MAX_VALUE || temp < Integer.MIN_VALUE ? 0 : (int) temp;
     }
 }
