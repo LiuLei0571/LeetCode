@@ -25,7 +25,7 @@ import java.util.Set;
 public class Solution3 {
 
     public static void main(String[] args) {
-        System.out.println( new Solution3().lengthOfLongestSubstring("abcbdw"));
+        System.out.println( new Solution3().lengthOfLongestSubstring("abcdbwc"));
 
     }
     // 定义两个指针，start和end，代表当前窗口的开始和结束位置，
