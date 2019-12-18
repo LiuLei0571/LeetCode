@@ -1,7 +1,7 @@
 public class Solution21 {
     public static void main(String[] args) {
-        int a[] = {1, 2, 4};
-        int b[] = {1, 3, 4, 6};
+        int a[] = {1, 2, 5,8};
+        int b[] = {2, 1, 3, 4};
         ListNode l1 = new ListNode(a);
         ListNode l2 = new ListNode(b);
         System.out.println(new Solution21().mergeTwoLists(l1, l2).toString());
