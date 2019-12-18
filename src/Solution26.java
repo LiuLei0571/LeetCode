@@ -1,6 +1,6 @@
 public class Solution26 {
     public static void main(String[] args) {
-        int[] a=new int[]{1,1,1,2,3};
+        int[] a=new int[]{1,2,3,3,4};
         System.out.println(new Solution26().removeDuplicates(a));
     }
     public int removeDuplicates(int[] nums) {
