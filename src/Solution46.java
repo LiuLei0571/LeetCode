@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Solution46 {
     public static void main(String[] args) {
-        int[] a=new int[]{1,2,3,4};
+        int[] a=new int[]{1,2,3};
         System.out.println(new Solution46().permute(a));
     }
     public List<List<Integer>> permute(int[] nums) {
@@ -30,4 +30,5 @@ public class Solution46 {
             }
         }
     }
+
 }
