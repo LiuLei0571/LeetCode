@@ -1,10 +1,10 @@
 import java.util.*;
 
-public class Solutuon637 {
+public class Solution637 {
     public static void main(String[] args) {
         int[] a = {2147483647,2147483647,2147483647};
         TreeNode treeNode = new TreeNode(a);
-        System.out.println(new Solutuon637().averageOfLevels(treeNode.root).toString());
+        System.out.println(new Solution637().averageOfLevels(treeNode.root).toString());
     }
     public List<Double> averageOfLevels(TreeNode root) {
         List<Double> result = new ArrayList<>();
