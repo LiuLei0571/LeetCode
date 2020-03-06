@@ -6,7 +6,7 @@ import java.util.HashSet;
 
 public class Solution13 {
     public static void main(String[] args) {
-        System.out.println(new Solution13().romanToInt("MCMXCIV"));
+        System.out.println(new Solution13().romanToInt("MDCL"));
     }
 
     public int romanToInt(String s) {

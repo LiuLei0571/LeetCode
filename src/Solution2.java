@@ -14,7 +14,7 @@
  * 链表
  * 数学
  */
-public class Solution2 {
+public class  Solution2 {
     public static void main(String[] args) {
         int[] a = {1, 9,4};
         int[] b = {2, 3, 9};
