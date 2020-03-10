@@ -3,6 +3,12 @@
  */
 public class Solution543 {
     int res = 0;
+
+    public static void main(String[] args) {
+        int[] test=new int[]{1,2,3,4,5};
+        TreeNode treeNode=new TreeNode(test);
+        System.out.println(new Solution543().depth(treeNode));
+    }
     public int diameterOfBinaryTree(TreeNode root) {
         if (root == null) {
             return 0;
