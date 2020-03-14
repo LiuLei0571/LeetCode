@@ -3,7 +3,6 @@ import java.util.HashMap;
 public class Sword07 {
 
     public static void main(String[] args) {
-
     }
     private HashMap<Integer, Integer> hashMap = new HashMap<>();
 
